@@ -1,0 +1,146 @@
+#content{
+	background-color: #ECF0F1;
+	color:#7F8C8D;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.container {
+	padding-right:15px;
+	padding-left:15px;
+	
+}
+.container .no-padding{
+	padding-right:0px;
+	padding-left:0px;
+
+}
+.no-margin{
+	margin-bottom: 0px !important;
+}
+
+#header-white{
+	color:#fff;
+}
+#header-white-bordered{
+	color:#2ECC71;
+	border-radius: 6px;
+  	border-color: #2ECC71;
+  	border-style: solid;
+    border-width: 1px;
+  	padding-top: 8px;
+  	padding-bottom: 8px;
+	margin-top: 6px;
+  }
+.jumbotron {
+	padding:0px 0px 0px 0px;
+
+	background: url('../img/back.jpg') no-repeat center center;
+	margin-bottom: 10px;
+	color:#fff;
+	
+}
+#backcolor{
+	opacity: 0.4;
+    filter: alpha(opacity=40); 
+
+}
+@media screen and (min-width: 768px) {
+	.container .jumbotron, .container-fluid .jumbotron {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+}
+.largefont{
+	font-size:70px;
+}
+#wrap {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 16px #000;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.between{
+	margin-bottom: 30px;
+}
+
+#tagline{
+  margin-top: 40px;
+  font-size: 30px;
+  text-shadow: 0 0 15px #000000;
+}
+#fastbook{
+	margin-bottom: 10px;
+
+}
+
+.nopadding{
+	padding:0px 0px 0px 0px;
+}
+.nomargin{
+	margin:0px 0px 10px 0px;
+}
+h3{
+	margin-top: 0px;
+	padding-top:20px;
+}
+.row{
+	margin-bottom: 15px;
+}
+.marketing{
+	margin-left:0px;
+	margin-right:0px;
+	
+}
+.footer{
+	background-color: #2ECC71;
+}
+
+#copyright{
+	color:white;
+}
+.white{
+	color:white;
+}
+.breadcrumb{
+	background-color: transparent;
+	
+	margin-bottom: 0px;
+}
+
+.transparent{
+	background-color: transparent;
+	border-color: transparent;
+}
+#marketing{
+
+}
+#marketing-img{
+	margin-top: 60px;
+}
+.separator{
+	border-style: transparent;
+	padding-bottom: 40px;
+    border-bottom: thin solid #BDC3C7;
+    margin-bottom: 70px;
+}
+#find{
+	color: #2ECC71;
+	border-radius: 6px;
+  	border-color: #2ECC71;
+  	border-style: solid;
+    border-width: 4px;
+    background-color: transparent;
+}
+#find:active, #find:hover, #find:focus {
+	box-shadow: 0 0 2px #27AE60;
+	border-color: #27AE60;
+	color: #27AE60;
+}
+body{
+	
+	font-family: 'Montserrat', sans-serif;	
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Budget Flight ticket</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.wait.js"></script>
+</head>
+<body>
+
+  <div id="content" class="container-fluid">
+    <div class="jumbotron">
+      
+     <div class="header">
+      <nav id="navigation-top" class="navbar navbar-default transparent">
+       <div class="container-fluid">
+        <div class="navbar-header">
+         <a href="" id="header-white" class="navbar-brand">Budget-Ticket.com</a>
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse-1" aria-expanded="false" aria-controls="menu-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="menu-collapse-1" class="navbar-collapse collapse">
+       <ul  class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a id="header-white" href="">Help</a></li>
+        <li role="presentation"><a id="header-white" href="">Promotion</a></li>
+        <li role="presentation"><a id="header-white-bordered" href="">Sign In</a></li>
+      </ul>
+    </div>  
+  </div>
+</nav>  
+</div>
+
+<div class="container no-padding">
+  <div class="row nomargin">
+    <div class="col-md-12" >
+     <h2 id="tagline" class="hidden-xs text-center">GET A HOLIDAY THAT SUITS YOUR BUDGET RIGHT HERE</h2>
+   </div>
+ </div>
+ <div class="row nomargin">
+  <div id="wrap" class="col-md-offset-4 col-md-4 nopadding">
+    <div class="form-group">
+      <div class="row nomargin">
+      </div>
+      <div class="row nomargin">
+        <div id="fastbook" class="col-md-offset-1 col-md-10">
+          <input type="text" class="form-control input-lg" id="exampleInputAmount" placeholder="Going from..">
+        </div>
+      </div>
+      <div class="row nomargin">
+        <div id="fastbook" class="col-md-12">
+          <div class="col-md-offset-2 col-md-8 col-xs-8  nopadding">
+            <div class="input-group">
+              <span class="input-group-addon">RM</span>
+              <input type="text" class="form-control input-lg" placeholder="Budget" id="Budget">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row nomargin">
+        <div class="col-md-offset-1 col-md-10">
+          <button type="button" id="find" class="btn btn-primary btn-block btn-lg" ><small><b>FIND YOUR BEST PRICE NOW</b></small></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>	
+</div>
+
+
+
+<div class="row marketing">
+  <div class="row">
+    <div id="marketing" class="col-md-12">
+      
+      <h2 class="text-center" > We are <b>special </b></h4>
+        <h4 class="text-center">Here are few of the reasons..</h3>
+        </div>
+        <div class="col-md-offset-5 col-md-2 separator">
+          
+        </div>
+      </div>
+
+
+
+
+      <div class="row ">
+        <div class="col-md-4 between">
+
+          <img id="budget" class="marketing-img img-circle center-block" src="img/budget.jpg" alt=".." width="200px" height="200px">
+          
+          <h4 id="marketing" class="text-center">Fly Based on your budget</h4>
+
+
+
+        </div>
+
+        <div class="col-md-4">
+          <img id="surcharge" class="marketing-img img-circle center-block" src="img/surcharge.jpg" alt=".." width="200px" height="200px">
+
+          <h4 id="marketing" class="text-center">No Extra Surcharge</h4>
+
+        </div>
+        <div class="col-md-4">
+          <img id="options" class="marketing-img img-circle center-block" src="img/options.jpg" alt=".." width="200px" height="200px">
+
+          <h4 id="marketing" class="text-center">Many options</h4>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="row no-margin">
+        <div class="col-md-6">
+          <ol class="breadcrumb">
+            <li class="white"  >Sitemap</li>
+            <li class="white active">Home</li>
+            <li><a class="white" href="#">Contact us</a></li>
+            <li><a class="white"  href="#">Help</a></li>
+          </ol>
+
+        </div>
+
+        <div class="col-md-6">
+
+
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" id="copyright"><a class="white text-muted" href="#"><b>Copright 2015</b></a></li>
+            <li role="presentation" ><a class="white" href="#">Disclaimer</a></li>
+            <li role="presentation" ><a class="white" href="#">Privacy Policy</a></li>
+          </ul>  
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+
+    $(".marketing-img").on("mouseenter",
+      function(){
+        var current = $(this).attr("id");
+        console.log(current);
+        $(this).addClass("animated infinate flipInY").off("mouseleave").wait(50).attr("src", "img/"+current+"-hovered.jpg").wait("mouseleave").removeClass("animated infinate flipInY").attr("src", "img/"+current+".jpg");
+      });
+
+  </script>
+
+</body>
+</html>
